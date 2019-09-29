@@ -7,4 +7,20 @@ class Song
         @@all << self
     end 
     
+    def self.all 
+        @@all 
+    end 
+
+    def name 
+        @name 
+    end 
+
+    def artist 
+        @artist 
+    end 
+
+    def artist_name 
+        self.artist.name if artist
+    end 
+    
 end 
